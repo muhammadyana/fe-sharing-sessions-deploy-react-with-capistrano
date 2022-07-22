@@ -1,0 +1,251 @@
+# Logfile created on 2022-07-22 15:39:42 +0700 by logger.rb/v1.4.3
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-07-22 15:39:42 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3431d0ea] Running /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/ as @108.136.52.200
+ DEBUG [3431d0ea] Command: /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-07-22 15:40:04 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [77b1bf68] Running /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/ as @108.136.52.200
+ DEBUG [77b1bf68] Command: /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-07-22 15:40:18 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [63e9e916] Running /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/ as ubuntu@108.136.52.200
+ DEBUG [63e9e916] Command: /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/
+  INFO [63e9e916] Finished in 0.498 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/fe-sharing-sessions/nvm-exec.sh 0.0%
+  INFO Uploading /tmp/fe-sharing-sessions/nvm-exec.sh 100.0%
+  INFO [dd2e7ea9] Running /usr/bin/env chmod +x /tmp/fe-sharing-sessions/nvm-exec.sh as ubuntu@108.136.52.200
+ DEBUG [dd2e7ea9] Command: /usr/bin/env chmod +x /tmp/fe-sharing-sessions/nvm-exec.sh
+  INFO [dd2e7ea9] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [9c55dcf3] Running [ -d $HOME/.nvm/v14.20.0 ] || [ -d $HOME/.nvm/versions/node/v14.20.0 ] as ubuntu@108.136.52.200
+ DEBUG [9c55dcf3] Command: [ -d $HOME/.nvm/v14.20.0 ] || [ -d $HOME/.nvm/versions/node/v14.20.0 ]
+ DEBUG [9c55dcf3] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [39c719a0] Running /usr/bin/env mkdir -p /tmp as ubuntu@108.136.52.200
+ DEBUG [39c719a0] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [39c719a0] Finished in 0.031 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-3bc4d79ef80c71d3504b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-3bc4d79ef80c71d3504b.sh 100.0%
+  INFO [3f53ab9e] Running /usr/bin/env chmod 700 /tmp/git-ssh-3bc4d79ef80c71d3504b.sh as ubuntu@108.136.52.200
+ DEBUG [3f53ab9e] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-3bc4d79ef80c71d3504b.sh )
+  INFO [3f53ab9e] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [adf245f3] Running /usr/bin/env git ls-remote git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git HEAD as ubuntu@108.136.52.200
+ DEBUG [adf245f3] Command: ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3bc4d79ef80c71d3504b.sh" ; /usr/bin/env git ls-remote git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git HEAD )
+ DEBUG [adf245f3] 	6fe9d3b2fd5142ba227b5af334160dd5522f08c0	HEAD
+  INFO [adf245f3] Finished in 2.748 seconds with exit status 0 (successful).
+  INFO [d91707b0] Running /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/shared /home/ubuntu/apps/fe-sharing-sessions/releases as ubuntu@108.136.52.200
+ DEBUG [d91707b0] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/shared /home/ubuntu/apps/fe-sharing-sessions/releases )
+  INFO [d91707b0] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [52527767] Running [ -f /home/ubuntu/apps/fe-sharing-sessions/current/REVISION ] as ubuntu@108.136.52.200
+ DEBUG [52527767] Command: [ -f /home/ubuntu/apps/fe-sharing-sessions/current/REVISION ]
+ DEBUG [52527767] Finished in 0.028 seconds with exit status 1 (failed).
+ DEBUG [2fc661ad] Running [ -f /home/ubuntu/apps/fe-sharing-sessions/repo/HEAD ] as ubuntu@108.136.52.200
+ DEBUG [2fc661ad] Command: [ -f /home/ubuntu/apps/fe-sharing-sessions/repo/HEAD ]
+ DEBUG [2fc661ad] Finished in 0.071 seconds with exit status 1 (failed).
+ DEBUG [a445175c] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions'" 1>&2; false; fi as ubuntu@108.136.52.200
+ DEBUG [a445175c] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions'" 1>&2; false; fi
+ DEBUG [a445175c] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [0b47f1e0] Running /usr/bin/env git clone --mirror git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git /home/ubuntu/apps/fe-sharing-sessions/repo as ubuntu@108.136.52.200
+ DEBUG [0b47f1e0] Command: cd /home/ubuntu/apps/fe-sharing-sessions && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3bc4d79ef80c71d3504b.sh" ; /usr/bin/env git clone --mirror git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git /home/ubuntu/apps/fe-sharing-sessions/repo )
+ DEBUG [0b47f1e0] 	Cloning into bare repository '/home/ubuntu/apps/fe-sharing-sessions/repo'...
+  INFO [0b47f1e0] Finished in 4.736 seconds with exit status 0 (successful).
+ DEBUG [f92d1f8f] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi as ubuntu@108.136.52.200
+ DEBUG [f92d1f8f] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi
+ DEBUG [f92d1f8f] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [09139a94] Running /usr/bin/env git remote set-url origin git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git as ubuntu@108.136.52.200
+ DEBUG [09139a94] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3bc4d79ef80c71d3504b.sh" ; /usr/bin/env git remote set-url origin git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git )
+  INFO [09139a94] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [3222db2f] Running /usr/bin/env git remote update --prune as ubuntu@108.136.52.200
+ DEBUG [3222db2f] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3bc4d79ef80c71d3504b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3222db2f] 	Fetching origin
+  INFO [3222db2f] Finished in 2.694 seconds with exit status 0 (successful).
+ DEBUG [9b3300a7] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi as ubuntu@108.136.52.200
+ DEBUG [9b3300a7] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi
+ DEBUG [9b3300a7] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [29ead55a] Running /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021 as ubuntu@108.136.52.200
+ DEBUG [29ead55a] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3bc4d79ef80c71d3504b.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021 )
+  INFO [29ead55a] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [0f3793bb] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021 as ubuntu@108.136.52.200
+ DEBUG [0f3793bb] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3bc4d79ef80c71d3504b.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021 )
+  INFO [0f3793bb] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [d560948d] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi as ubuntu@108.136.52.200
+ DEBUG [d560948d] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi
+ DEBUG [d560948d] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [c9ee92ed] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@108.136.52.200
+ DEBUG [c9ee92ed] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3bc4d79ef80c71d3504b.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [c9ee92ed] 	6fe9d3b2fd5142ba227b5af334160dd5522f08c0
+ DEBUG [c9ee92ed] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [b4795d47] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021'" 1>&2; false; fi as ubuntu@108.136.52.200
+ DEBUG [b4795d47] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021'" 1>&2; false; fi
+ DEBUG [b4795d47] Finished in 0.028 seconds with exit status 0 (successful).
+  INFO [d182781a] Running /usr/bin/env echo "6fe9d3b2fd5142ba227b5af334160dd5522f08c0" > REVISION as ubuntu@108.136.52.200
+ DEBUG [d182781a] Command: cd /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021 && ( export NODE_VERSION="v14.20.0" ; /usr/bin/env echo "6fe9d3b2fd5142ba227b5af334160dd5522f08c0" > REVISION )
+  INFO [d182781a] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [c68ffc1d] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021'" 1>&2; false; fi as ubuntu@108.136.52.200
+ DEBUG [c68ffc1d] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021'" 1>&2; false; fi
+ DEBUG [c68ffc1d] Finished in 0.028 seconds with exit status 0 (successful).
+  INFO [5d7cb7d7] Running /tmp/fe-sharing-sessions/nvm-exec.sh yarn install --silent --no-progress as ubuntu@108.136.52.200
+ DEBUG [5d7cb7d7] Command: cd /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084021 && ( export NODE_VERSION="v14.20.0" ; /tmp/fe-sharing-sessions/nvm-exec.sh yarn install --silent --no-progress )
+ DEBUG [5d7cb7d7] 	manpath: 
+ DEBUG [5d7cb7d7] 	can't set the locale; make sure $LC_* and $LANG are correct
+ DEBUG [5d7cb7d7] 	
+ DEBUG [5d7cb7d7] 	manpath: 
+ DEBUG [5d7cb7d7] 	can't set the locale; make sure $LC_* and $LANG are correct
+ DEBUG [5d7cb7d7] 	
+ DEBUG [5d7cb7d7] 	Now using node v14.20.0 (npm v6.14.17)
+ DEBUG [5d7cb7d7] 	Usage: yarn [options]
+
+yarn: error: no such option: --silent
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-07-22 15:42:17 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9b16c696] Running /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/ as ubuntu@108.136.53.121
+ DEBUG [9b16c696] Command: /usr/bin/env mkdir -p /tmp/fe-sharing-sessions/
+  INFO [9b16c696] Finished in 0.925 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/fe-sharing-sessions/nvm-exec.sh 0.0%
+  INFO Uploading /tmp/fe-sharing-sessions/nvm-exec.sh 100.0%
+  INFO [c5c95775] Running /usr/bin/env chmod +x /tmp/fe-sharing-sessions/nvm-exec.sh as ubuntu@108.136.53.121
+ DEBUG [c5c95775] Command: /usr/bin/env chmod +x /tmp/fe-sharing-sessions/nvm-exec.sh
+  INFO [c5c95775] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [d2c26d29] Running [ -d $HOME/.nvm/v14.20.0 ] || [ -d $HOME/.nvm/versions/node/v14.20.0 ] as ubuntu@108.136.53.121
+ DEBUG [d2c26d29] Command: [ -d $HOME/.nvm/v14.20.0 ] || [ -d $HOME/.nvm/versions/node/v14.20.0 ]
+ DEBUG [d2c26d29] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [6e6bbbdc] Running /usr/bin/env mkdir -p /tmp as ubuntu@108.136.53.121
+ DEBUG [6e6bbbdc] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [6e6bbbdc] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a51085af1487dc552943.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a51085af1487dc552943.sh 100.0%
+  INFO [e6760029] Running /usr/bin/env chmod 700 /tmp/git-ssh-a51085af1487dc552943.sh as ubuntu@108.136.53.121
+ DEBUG [e6760029] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-a51085af1487dc552943.sh )
+  INFO [e6760029] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [6d910262] Running /usr/bin/env git ls-remote git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git HEAD as ubuntu@108.136.53.121
+ DEBUG [6d910262] Command: ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a51085af1487dc552943.sh" ; /usr/bin/env git ls-remote git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git HEAD )
+ DEBUG [6d910262] 	6fe9d3b2fd5142ba227b5af334160dd5522f08c0	HEAD
+  INFO [6d910262] Finished in 2.630 seconds with exit status 0 (successful).
+  INFO [c7c487f6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/shared /home/ubuntu/apps/fe-sharing-sessions/releases as ubuntu@108.136.53.121
+ DEBUG [c7c487f6] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/shared /home/ubuntu/apps/fe-sharing-sessions/releases )
+  INFO [c7c487f6] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [54ed0157] Running [ -f /home/ubuntu/apps/fe-sharing-sessions/current/REVISION ] as ubuntu@108.136.53.121
+ DEBUG [54ed0157] Command: [ -f /home/ubuntu/apps/fe-sharing-sessions/current/REVISION ]
+ DEBUG [54ed0157] Finished in 0.035 seconds with exit status 1 (failed).
+ DEBUG [2e68899c] Running [ -f /home/ubuntu/apps/fe-sharing-sessions/repo/HEAD ] as ubuntu@108.136.53.121
+ DEBUG [2e68899c] Command: [ -f /home/ubuntu/apps/fe-sharing-sessions/repo/HEAD ]
+ DEBUG [2e68899c] Finished in 0.065 seconds with exit status 1 (failed).
+ DEBUG [6d077b97] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [6d077b97] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions'" 1>&2; false; fi
+ DEBUG [6d077b97] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [b879ec72] Running /usr/bin/env git clone --mirror git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git /home/ubuntu/apps/fe-sharing-sessions/repo as ubuntu@108.136.53.121
+ DEBUG [b879ec72] Command: cd /home/ubuntu/apps/fe-sharing-sessions && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a51085af1487dc552943.sh" ; /usr/bin/env git clone --mirror git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git /home/ubuntu/apps/fe-sharing-sessions/repo )
+ DEBUG [b879ec72] 	Cloning into bare repository '/home/ubuntu/apps/fe-sharing-sessions/repo'...
+  INFO [b879ec72] Finished in 4.946 seconds with exit status 0 (successful).
+ DEBUG [ba53a312] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [ba53a312] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi
+ DEBUG [ba53a312] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [2da1421a] Running /usr/bin/env git remote set-url origin git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git as ubuntu@108.136.53.121
+ DEBUG [2da1421a] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a51085af1487dc552943.sh" ; /usr/bin/env git remote set-url origin git@github.com:muhammadyana/fe-sharing-sessions-deploy-react-with-capistrano.git )
+  INFO [2da1421a] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [c51dcd38] Running /usr/bin/env git remote update --prune as ubuntu@108.136.53.121
+ DEBUG [c51dcd38] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a51085af1487dc552943.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c51dcd38] 	Fetching origin
+  INFO [c51dcd38] Finished in 2.719 seconds with exit status 0 (successful).
+ DEBUG [187a8977] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [187a8977] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi
+ DEBUG [187a8977] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [9c8d6c9c] Running /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 as ubuntu@108.136.53.121
+ DEBUG [9c8d6c9c] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a51085af1487dc552943.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 )
+  INFO [9c8d6c9c] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [02219ab5] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 as ubuntu@108.136.53.121
+ DEBUG [02219ab5] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a51085af1487dc552943.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 )
+  INFO [02219ab5] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [9e40f1d2] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [9e40f1d2] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/repo; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/repo'" 1>&2; false; fi
+ DEBUG [9e40f1d2] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [4fd41c9b] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@108.136.53.121
+ DEBUG [4fd41c9b] Command: cd /home/ubuntu/apps/fe-sharing-sessions/repo && ( export NODE_VERSION="v14.20.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a51085af1487dc552943.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [4fd41c9b] 	6fe9d3b2fd5142ba227b5af334160dd5522f08c0
+ DEBUG [4fd41c9b] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [cc160195] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [cc160195] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221'" 1>&2; false; fi
+ DEBUG [cc160195] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [4ef94df5] Running /usr/bin/env echo "6fe9d3b2fd5142ba227b5af334160dd5522f08c0" > REVISION as ubuntu@108.136.53.121
+ DEBUG [4ef94df5] Command: cd /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 && ( export NODE_VERSION="v14.20.0" ; /usr/bin/env echo "6fe9d3b2fd5142ba227b5af334160dd5522f08c0" > REVISION )
+  INFO [4ef94df5] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [811d2d6e] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [811d2d6e] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221'" 1>&2; false; fi
+ DEBUG [811d2d6e] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [f02cf6b9] Running /tmp/fe-sharing-sessions/nvm-exec.sh yarn install --silent --no-progress as ubuntu@108.136.53.121
+ DEBUG [f02cf6b9] Command: cd /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 && ( export NODE_VERSION="v14.20.0" ; /tmp/fe-sharing-sessions/nvm-exec.sh yarn install --silent --no-progress )
+ DEBUG [f02cf6b9] 	manpath: 
+ DEBUG [f02cf6b9] 	can't set the locale; make sure $LC_* and $LANG are correct
+ DEBUG [f02cf6b9] 	
+ DEBUG [f02cf6b9] 	manpath: 
+ DEBUG [f02cf6b9] 	can't set the locale; make sure $LC_* and $LANG are correct
+ DEBUG [f02cf6b9] 	
+ DEBUG [f02cf6b9] 	Now using node v14.20.0 (npm v6.14.17)
+ DEBUG [f02cf6b9] 	warning @testing-library/jest-dom > css > source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+ DEBUG [f02cf6b9] 	warning react-scripts > @svgr/webpack > @svgr/plugin-svgo > svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+ DEBUG [f02cf6b9] 	warning react-scripts > @svgr/webpack > @svgr/plugin-svgo > svgo > stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+ DEBUG [f02cf6b9] 	warning react-scripts > css-minimizer-webpack-plugin > cssnano > cssnano-preset-default > postcss-svgo > svgo > stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+ DEBUG [f02cf6b9] 	warning "@emotion/react > @emotion/babel-plugin@11.9.2" has unmet peer dependency "@babel/core@^7.0.0".
+ DEBUG [f02cf6b9] 	warning "@emotion/react > @emotion/babel-plugin > @babel/plugin-syntax-jsx@7.18.6" has unmet peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [f02cf6b9] 	warning " > @testing-library/user-event@14.2.1" has unmet peer dependency "@testing-library/dom@>=7.21.4".
+ DEBUG [f02cf6b9] 	warning " > react-chartjs-2@3.0.4" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+ DEBUG [f02cf6b9] 	warning "react-scripts > eslint-config-react-app > eslint-plugin-flowtype@8.0.3" has unmet peer dependency "@babel/plugin-syntax-flow@^7.14.5".
+ DEBUG [f02cf6b9] 	warning "react-scripts > eslint-config-react-app > eslint-plugin-flowtype@8.0.3" has unmet peer dependency "@babel/plugin-transform-react-jsx@^7.14.9".
+ DEBUG [f02cf6b9] 	warning "react-scripts > react-dev-utils > fork-ts-checker-webpack-plugin@6.5.2" has unmet peer dependency "typescript@>= 2.7".
+ DEBUG [f02cf6b9] 	warning "react-scripts > eslint-config-react-app > @typescript-eslint/eslint-plugin > tsutils@3.21.0" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+  INFO [f02cf6b9] Finished in 76.041 seconds with exit status 0 (successful).
+ DEBUG [897d5e56] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [897d5e56] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221'" 1>&2; false; fi
+ DEBUG [897d5e56] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [b2ed8600] Running /tmp/fe-sharing-sessions/nvm-exec.sh yarn build as ubuntu@108.136.53.121
+ DEBUG [b2ed8600] Command: cd /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 && ( export NODE_VERSION="v14.20.0" ; /tmp/fe-sharing-sessions/nvm-exec.sh yarn build )
+ DEBUG [b2ed8600] 	manpath: 
+ DEBUG [b2ed8600] 	can't set the locale; make sure $LC_* and $LANG are correct
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	manpath: 
+ DEBUG [b2ed8600] 	can't set the locale; make sure $LC_* and $LANG are correct
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	Now using node v14.20.0 (npm v6.14.17)
+ DEBUG [b2ed8600] 	yarn run v1.22.19
+ DEBUG [b2ed8600] 	$ react-scripts build
+ DEBUG [b2ed8600] 	Creating an optimized production build...
+ DEBUG [b2ed8600] 	Compiled successfully.
+
+ DEBUG [b2ed8600] 	File sizes after gzip:
+
+ DEBUG [b2ed8600] 	  281.94 kB  build/static/js/main.aec9d96a.js
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	The project was built assuming it is hosted at /.
+ DEBUG [b2ed8600] 	You can control this with the homepage field in your package.json.
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	The build folder is ready to be deployed.
+ DEBUG [b2ed8600] 	You may serve it with a static server:
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	  yarn global add serve
+ DEBUG [b2ed8600] 	  serve -s build
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	Find out more about deployment here:
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	  https://cra.link/deployment
+ DEBUG [b2ed8600] 	
+ DEBUG [b2ed8600] 	Done in 49.57s.
+  INFO [b2ed8600] Finished in 50.373 seconds with exit status 0 (successful).
+  INFO [8ae92798] Running /usr/bin/env ln -s /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 /home/ubuntu/apps/fe-sharing-sessions/releases/current as ubuntu@108.136.53.121
+ DEBUG [8ae92798] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env ln -s /home/ubuntu/apps/fe-sharing-sessions/releases/20220722084221 /home/ubuntu/apps/fe-sharing-sessions/releases/current )
+  INFO [8ae92798] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [719ca5d2] Running /usr/bin/env mv /home/ubuntu/apps/fe-sharing-sessions/releases/current /home/ubuntu/apps/fe-sharing-sessions as ubuntu@108.136.53.121
+ DEBUG [719ca5d2] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env mv /home/ubuntu/apps/fe-sharing-sessions/releases/current /home/ubuntu/apps/fe-sharing-sessions )
+  INFO [719ca5d2] Finished in 0.084 seconds with exit status 0 (successful).
+ DEBUG [91085331] Running /usr/bin/env ls -x /home/ubuntu/apps/fe-sharing-sessions/releases as ubuntu@108.136.53.121
+ DEBUG [91085331] Command: ( export NODE_VERSION="v14.20.0" ; /usr/bin/env ls -x /home/ubuntu/apps/fe-sharing-sessions/releases )
+ DEBUG [91085331] 	20220722084221
+ DEBUG [91085331] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [62bf8017] Running if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases'" 1>&2; false; fi as ubuntu@108.136.53.121
+ DEBUG [62bf8017] Command: if test ! -d /home/ubuntu/apps/fe-sharing-sessions/releases; then echo "Directory does not exist '/home/ubuntu/apps/fe-sharing-sessions/releases'" 1>&2; false; fi
+ DEBUG [62bf8017] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [c018d318] Running /usr/bin/env echo "Branch main (at 6fe9d3b2fd5142ba227b5af334160dd5522f08c0) deployed as release 20220722084221 by yana" >> /home/ubuntu/apps/fe-sharing-sessions/revisions.log as ubuntu@108.136.53.121
+ DEBUG [c018d318] Command: cd /home/ubuntu/apps/fe-sharing-sessions/releases && ( export NODE_VERSION="v14.20.0" ; /usr/bin/env echo "Branch main (at 6fe9d3b2fd5142ba227b5af334160dd5522f08c0) deployed as release 20220722084221 by yana" >> /home/ubuntu/apps/fe-sharing-sessions/revisions.log )
+  INFO [c018d318] Finished in 0.031 seconds with exit status 0 (successful).
